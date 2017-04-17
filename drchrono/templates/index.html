@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="App">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<link href="{% static 'css/mycss.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<div ng-view><!-- VIEWS --></div>
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="{% static 'js/angular.min.js' %}"></script>
+ <script src="{% static 'js/angular-route.min.js' %}"></script>
+   <script src="{% static 'js/angular-resource.min.js' %}"></script>
+   <script src="{% static 'js/angular-cookies.js' %}"></script>
+   <script src="{% static 'js/ngStorage.js' %}"></script>
+   <script src="{% static 'js/ui-bootstrap-tpls-0.13.0.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/controllers.js' %}"></script>
+
+
+</body>
+</html>

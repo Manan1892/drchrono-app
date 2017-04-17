@@ -1,0 +1,83 @@
+
+<div class="wrapper" style="height:100%;">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/home">DrCare</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+     
+      <ul class="nav navbar-nav navbar-right">
+       
+        <li class="dropdown">
+          <a href="/logout/">Logout <i class="fa fa-power-off" aria-hidden="true"></i></a>
+          
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+	
+	<div class="container" style="background-color:#fff; margin-bottom:100px;">		
+		<div style="clear:both"></div>
+		
+		<div class="navigation_dashboard">
+		<ul>
+     <li ng-click="getpatients()">Patients With Birthday Today</li>
+		<li ng-click="getallpatients()">Get All Patients</li>
+
+		<li ng-click="sendwishes(patients)">Wish All</li>
+				</ul>
+		</div>
+			<div class="col-md-8">
+			<div class="box" style="color:#000;  border:1px solid #ccc; margin-top:15px; padding:5px;">
+                <div class="box-header">
+                  <h3 class="box-title" style="margin-top:10px">Patients List</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding" style="height:400px;overflow-y:scroll;">
+                  <table class="table table-condensed" >
+                    <tbody><tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Date Of Birth</th>
+                    </tr>
+                    <tr class="table-rows" ng-repeat="patient in patients" ng-click="getpatientinfo(patient)" ng-if="patient.date_of_birth.indexOf(date) > -1 || dateflag">
+                      <td>{{patient.first_name}}</td>
+                      <td>{{patient.last_name}}  
+                      </td>
+                      <td>{{patient.date_of_birth}}</td>
+                    </tr>
+                    
+                  </tbody></table>
+                </div><!-- /.box-body -->
+              </div>
+			</div>
+			
+      <div class="col-md-4" style="text-align:center;margin-top:18px;">
+      <div class="left_image">
+      <img class="img-responsive img-thumbnail" style="width:190px;height:180px" ng-if="!pic" src="/static/images/profile-pic.jpg">
+      <img class="img-responsive img-thumbnail" style="width:190px;height:180px" ng-if="pic" src="{{pic}}">
+      </div>
+      <div class="left_formpart">
+        <P>First Name : {{fname}}</P>
+        <P>Last Name : {{lname}}</P>
+        <P>Date Of BIrth : {{dob}}</P>
+        
+      </div>
+      
+      </div>
+		
+		
+		</div>

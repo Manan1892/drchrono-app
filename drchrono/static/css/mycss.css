@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0 auto;}
+body{padding:0; margin:0; background:#f9f9f9 }
+.wrapper{ width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    background-attachment: fixed;
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; color:#fff;font-family: 'Abel', sans-serif;}
+	
+	.boxmain{width:400px; height:auto; float:right;margin-top:152px;margin-right:200px; }
+	.welcometext{ width:100%; height:auto; float:left; text-align:right; text-transform:uppercase; font-weight:bold; font-size:25px; margin-left:-2px;}
+	.Dr_Caretext{ width:100%; height:auto; float:left; text-align:right; text-transform:uppercase;font-weight:bold;font-size:80px; margin-top:-27px;}
+	.enterbutton{ width:100%; height:auto; float:left; text-align:center; margin:50px 0 0 0; }
+	.enterbutton_inner{background-color:#05abd5; color:#fff; border-radius:24px; border-bottom:4px solid #0483a3; padding:10px 20px; font-size:18px;}
+	.enterbutton_inner:hover{background-color:#0398be; color:#fff; border-radius:24px; border-bottom:4px solid #036b85; padding:10px 20px; font-size:18px;cursor:pointer;}
+.enterbutton a{text-decoration:none}
+.enterbutton a:hover{text-decoration:none}
+
+
+.enterbutton_inner2{width:180px; height:auto ; float:left;background-color:#05abd5; color:#fff; border-radius:154px; border-bottom:4px solid #0483a3; 
+padding:60px 20px; font-size:18px;}
+	.enterbutton_inner:hover{background-color:#0398be; color:#fff; border-radius:24px; border-bottom:4px solid #036b85; padding:10px 20px; font-size:18px;cursor:pointer;}
+.enterbutton a{text-decoration:none}
+.enterbutton a:hover{text-decoration:none}
+.form_imagepart{ width: 100%;
+    height: 150px;
+    float: left;
+    position: absolute;
+    background-attachment: fixed;
+    background-image: url(../images/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; color:#fff;font-family: 'Abel', sans-serif;}
+.navigation_dashboard{ width:100%; height:auto; float:left; padding-top:9px;}
+.navigation_dashboard ul{ list-style-type:none; padding:0; margin:0}
+.navigation_dashboard ul li{ float:left; margin: 0 0 0 15px; padding:7px 15px;  cursor: pointer;   background-color: #05abd5;
+    color: #fff;
+    border-radius: 5px;
+    border-bottom: 4px solid #0483a3;}
+.navigation_dashboard ul li{ float:left; margin: 0 0 0 15px;}
+.avg_time{color:#333; padding:10px 0; text-align:center; font-weight:bold; font-size:18px; font-family:arial;}
+.table-rows { cursor: pointer;}
+  .sellpage_headding{width:100%; height:auto;float:left; border-bottom:1px dotted #eb4e36;color:#202020; font-size:17px; padding:5px 0 6px 0;  }
+  .sellpage_headding_text{width:100%; height:auto;float:left; padding:0px 0 15px 0; color:#343333}
+  .sellpage_right_headdingpart{ width:100%;height:auto;float:left; margin:10px 0 15px 0;border-bottom:1px dotted #bbbdbf; font-size:18px; 
+  padding:0 0 8px 0; color:#008abb;font-weight:bold;}
+   .selpage_padding{padding:0; width:98%; margin: 0 1%}
+   .selpage_padding_small{padding:17px 0 0 0px;}
+   .addcar_part{width:100%; height:auto;float:left; margin-bottom:50px; margin-top:50px;}
+   .sellpagenext_button{width:100px; float:right}
+.sellpagecheckbox_text{color:#484949}
+   .sellpage_right_headdingpart2{ width:100%;height:auto;float:left; margin:0px 0 5px 0; font-size:14px; color:#333; font-weight:bold}
+    .selpage_padding_small2{padding:17px 0 0 0px; margin:0 1%; width:23%}
+	.sellpage_leftbgpadding{padding:0 0 50px 0; margin-top:54px}
+	.sell_left_box1{ width:100%; height:auto; float:left; padding:22px 0 22px  0px; background-color:#d6dbe0; color:#333;border-bottom:1px solid #fff}
+	.sell_left_box2{ width:100%; height:auto; float:left; padding:22px 0 22px  0px; background-color:#d6dbe0; color:#333; border-bottom:1px solid #fff}
+	.sell_left_box1_headding{ width:100%; height:auto; float:left;}
+	.sell_left_box1_headding_icon{width:100%; height:auto; float:left; margin:8px 0 0 0;}
+	.sell_left_box1_headding_icon_left{width:92%; height:auto; float:left;background-color:#008abb; color:#fff;padding:7px 0 10px 10px}
+	.sell_left_box1_headding_icon_left2{width:92%; height:auto; float:left;background-color:#444444; color:#fff;padding:7px 0 10px 10px}
+	
+	.sell_left_box1_headding_icon_left_left{width:14%; height:auto; float:left; margin-top:6px;}
+	.sell_left_box1_headding_icon_left_right{width:85%; height:auto; float:left; margin-left:15px;}
+	.sell_left_box1_headding_icon_left_right_headding{ border-left:4px solid #fff; font-size:14px; font-weight:bold; padding:0 0 0 10px; margin-bottom:2px; text-transform:uppercase;}
+	.sell_left_box1_headding_icon_left_right_headding_text{ font-size:12px;}
+	.sell_left_box1_headding_icon_right{width:8%; height:auto; float:left;}
+	.sell_left_box1_headding_icon_right img{height:60px;}
+	.sell_left_box1_headding_icon_right_moving{width:100%; height:auto; float:left; margin:0 0 0 24px;}
+ 
+
+	.left_image{width: 100%; height: auto;float: left; margin-bottom: 10px; color:#333;}
+	.left_formpart{width: 100%; height: auto;float: left;color:#333; font-weight: bold; }
+	 @media only screen and (max-width: 1000px) {
+		.boxmain{width:300px; margin:120px auto 30px auto;} 
+		.welcometext{ font-size:20px}
+		.Dr_Caretext{font-size:83px}
+		.
+	 }
